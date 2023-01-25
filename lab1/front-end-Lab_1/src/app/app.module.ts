@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
+import { ProdTitleComponent } from './prod-title/prod-title.component';
+import { ProdContentComponent } from './prod-content/prod-content.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ProductsPageComponent } from './products-page/products-page.component';
     FooterComponent,
     HomePageComponent,
     InfoPageComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    ProdTitleComponent,
+    ProdContentComponent
   ],
   imports: [
     BrowserModule,

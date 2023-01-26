@@ -13,6 +13,7 @@ import { InfoPageComponent } from './info-page/info-page.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { ProdTitleComponent } from './prod-title/prod-title.component';
 import { ProdContentComponent } from './prod-content/prod-content.component';
+import { InfoContentComponent } from './info-content/info-content.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProdContentComponent } from './prod-content/prod-content.component';
     InfoPageComponent,
     ProductsPageComponent,
     ProdTitleComponent,
-    ProdContentComponent
+    ProdContentComponent,
+    InfoContentComponent
   ],
   imports: [
     BrowserModule,

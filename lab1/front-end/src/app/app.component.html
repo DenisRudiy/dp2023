@@ -1,1 +1,28 @@
-<h1>Hello World</h1>
+<app-header></app-header>
+<app-main></app-main>
+
+
+<a href="./Servlet1">Servlet1</a>
+<a href="./ImgServlet">Servlet1</a>
+
+<button (click)="getEntities()">Get Entities</button>
+
+<ul>
+    <li *ngFor="let ent of entityList">
+        Title: {{ent.title}}, age: {{ent.age}}, width: {{ent.width}}
+    </li>
+</ul>
+
+<button (click)="getEntitiesImg()">Get Photo</button>
+<ul>
+    <li *ngFor="let i_ent of entityImgList">
+        <img src="{{i_ent.img}}" alt="">
+    </li>
+</ul>
+
+<img src="assets/brand_1.png" alt="">
+
+
+<app-featured-product></app-featured-product>
+<app-companies></app-companies>
+<app-footer></app-footer>

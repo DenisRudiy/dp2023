@@ -1,2 +1,4 @@
+Entity\EntityImg.class
 Entity\Entity.class
+Servlet\ImgServlet.class
 Servlet\Servlet1.class

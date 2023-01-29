@@ -41,3 +41,4 @@ public class Entity {
         return "{\"title\": \""+title+"\", \"age\": "+age+", \"width\": "+width+" }";
     }
 }
+

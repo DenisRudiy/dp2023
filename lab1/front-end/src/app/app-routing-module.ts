@@ -1,7 +1,5 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing-module';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,23 +9,19 @@ import { CompaniesComponent } from './companies/companies.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
+const appRoute: Routes = [
+    {path: '', component: HomePageComponent},
+  ]
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    MainComponent,
-    FeaturedProductComponent,
-    CompaniesComponent,
-    FooterComponent,
-    HomePageComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+    imports: [
+      RouterModule.forRoot(appRoute)
+    ],
+    exports: [
+      RouterModule
+    ]
+  })
+  
+  export class AppRoutingModule {
+     
+  }

@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 @WebServlet("/Servlet1")
 public class Servlet1 extends HttpServlet {
@@ -21,8 +22,13 @@ public class Servlet1 extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         Entity entity = new Entity("Entity", 18, 1.81f);
+        Entity entity_x = new Entity("Entity2", 19, 1.61f);
 
-        out.println("["+entity+"]");
+        ArrayList<Entity> tents = new ArrayList<Entity>();
+        tents.add(entity);
+        tents.add(entity_x);
+
+        out.println(tents);
 
     }
 

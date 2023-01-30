@@ -1,4 +1,6 @@
 Entity\EntityImg.class
 Entity\Entity.class
+Servlet\TentServlet.class
+Entity\TentEntity.class
 Servlet\ImgServlet.class
 Servlet\Servlet1.class

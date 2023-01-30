@@ -9,7 +9,6 @@ import { TentServiceService } from '../services/tent-service.service';
 })
 export class FeaturedProductComponent {
   TentList:TentEntity[]=[];
-  page = 1;
 
   constructor(private service:TentServiceService){}
 
@@ -17,12 +16,8 @@ export class FeaturedProductComponent {
     this.service.getTentEntities().subscribe(
       (entities)=>{
         this.TentList=entities;
-        this.page = 1;
       }
     )
   }
-  handlePageChange(event: number): void {
-    this.page = event;
-}
 
 }

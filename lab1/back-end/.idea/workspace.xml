@@ -6,27 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b0c231f-0b39-41b4-8784-2f37e6689412" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlet/TentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlet/TentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.82e50f14268f75b6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/ImgServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/ImgServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/Servlet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/Servlet1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/main.bc44614847c7eaf5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/styles.ef46db3751d8e999.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlet/TentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlet/TentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/product-content/product-content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/product-content/product-content.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/product-content/product-content.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/product-content/product-content.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/product-content/product-content.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/product-content/product-content.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/product-title/product-title.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/product-title/product-title.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/product-title/product-title.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/product-title/product-title.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/app/products-page/products-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/products-page/products-page.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

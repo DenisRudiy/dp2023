@@ -2,6 +2,7 @@ package Servlet;
 
 
 import Entity.TentEntity;
+import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -17,9 +18,6 @@ public class TentServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-
-        response.setContentType("application/json");
-        PrintWriter out = response.getWriter();
 
         TentEntity entity1 = new TentEntity(
                 "Tent High Peak Nevada 4 (Dark Grey/Red), 4-person",
@@ -122,6 +120,13 @@ public class TentServlet extends HttpServlet {
         tents.add(entity8);
         tents.add(entity9);
 
-        out.println(tents);
+        String TentJson = new Gson().toJson(tents);
+
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+
+        PrintWriter out = response.getWriter();
+        out.print(TentJson);
+        out.flush();
     }
 }

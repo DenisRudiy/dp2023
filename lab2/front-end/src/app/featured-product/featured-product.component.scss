@@ -1,21 +1,21 @@
 .fetured_product {
-    height: 1100px;
+    height: 1600px;
 }
 .zagol {
     padding-left: 37%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    height: 180px;
 }
 .zagol > h1 {
     font-size: 80px;
     font-weight: 900;
+    margin: 0;
 }
 .zagol > h2 {
-    margin-top: 55px;
     font-size: 80px;
     font-weight: 100;
+    margin: 0;
 }
 .liff_1 {
     width: 30px;
@@ -63,8 +63,10 @@
 .f_p_content > button:hover {
     background-color: #9c681f;
 }
-
-.f_p_content > img { 
+.img_container {
+    height: 200px;
+}
+.f_p_content > .img_container > img { 
     cursor: pointer;
     padding-left: 50px;
     width: 250px;
@@ -73,8 +75,8 @@
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-.f_p_content > img:hover{
-     transform: scale(1.15);
+.f_p_content > .img_container > img:hover{
+     transform: scale(1.05);
 }
 
 .f_p_content > p {
@@ -89,14 +91,12 @@
     padding-left: 44%;
 }
 
-.rate {
+.A_rate {
     display: flex;
     flex-wrap: wrap;
     padding-left: 130px;
-    padding-top: 10px;
 }
-
-.rate > img {
-    width: 20px;
+.A_rate > h3 > img {
+    width: 30px;
     height: auto;
 }

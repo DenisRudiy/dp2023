@@ -2,6 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,13 +11,7 @@ import { FeaturedProductComponent } from './featured-product/featured-product.co
 import { CompaniesComponent } from './companies/companies.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { ProductsPageComponent } from './products-page/products-page.component';
-import { InfoPageComponent } from './info-page/info-page.component';
-import { ProductTitleComponent } from './product-title/product-title.component';
-import { ProductContentComponent } from './product-content/product-content.component';
-import { InfoTitleComponent } from './info-title/info-title.component';
-import { InfoContentComponent } from './info-content/info-content.component';
-
+import { EditFormComponent } from './edit-form/edit-form.component';
 
 @NgModule({
   declarations: [
@@ -27,17 +22,13 @@ import { InfoContentComponent } from './info-content/info-content.component';
     CompaniesComponent,
     FooterComponent,
     HomePageComponent,
-    ProductsPageComponent,
-    InfoPageComponent,
-    ProductTitleComponent,
-    ProductContentComponent,
-    InfoTitleComponent,
-    InfoContentComponent
+    EditFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

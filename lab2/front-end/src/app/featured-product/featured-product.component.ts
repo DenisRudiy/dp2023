@@ -10,14 +10,19 @@ import { TentServiceService } from '../services/tent-service.service';
 export class FeaturedProductComponent {
   TentList:TentEntity[]=[];
 
-  constructor(private service:TentServiceService){}
+  constructor(
+    private service:TentServiceService,
+    ){}
 
   ngOnInit(): void {
+    this.getTentEntities()
+  }
+
+  getTentEntities(): void{
     this.service.getTentEntities().subscribe(
       (entities)=>{
         this.TentList=entities;
       }
     )
   }
-
 }

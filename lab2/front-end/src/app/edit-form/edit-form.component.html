@@ -1,0 +1,13 @@
+<input type="text" #box (keyup)="getName(box.value)" placeholder="Change Name" name="name"><br>
+<input type="text" #img (keyup)="getImg(img.value)" placeholder="Change Img" name="img"><br>
+<form #f="ngForm" (keyup)="getPrice(f)">
+    <input type="number" name="price" ngModel placeholder="Change Price">
+</form>
+<form #w="ngForm" (keyup)="getRate(w)">
+    <input type="number" name="rate" ngModel placeholder="Change Rate">
+</form>
+<input type="text" #desc (keyup)="getDescription(desc.value)" placeholder="Change Description" name="description"><br>
+
+<button (click)="OnClick()">Click Me</button>
+
+

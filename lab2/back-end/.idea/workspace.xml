@@ -4,35 +4,94 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b0c231f-0b39-41b4-8784-2f37e6689412" name="Changes" comment="Change type of print the Json data">
+    <list default="true" id="d2f699d6-eeba-4f01-8008-53e1fb87318e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jakarta_servlet_api_6_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TentCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TentCrud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TentCrudInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TentCrudInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/TentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/TentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileIO/FileIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/FileIOInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileIO/FileIOInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mock/TentCrudMock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfigInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfigInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/3rdpartylicenses.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.8c2afc88213e4102.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.a73b8538f4d7a389.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.a73b8538f4d7a389.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Entity/Entity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Entity/TentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Entity/TentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/EntityServlet1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/ServletConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/ServletConfigInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/TentConfigInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/TentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Servlet/TentServletConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/FileCrud.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/Lab2CrudInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrud.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrud.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrudInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrudInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/TentIO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/TentIOInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/mock/Lab2CrudMock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/mock/TentCrudMock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/mock/TentCrudMock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/main.91997ad7ecec636b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/main.ff18075d39dc9ed4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Entity/TentEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrudInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/FileIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/FileIOInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/mock/TentCrudMock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/servlets/TentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/servlets/TentServletConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/servlets/TentServletConfigInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/lib/gson-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/lib/jakarta.servlet-api-6.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/Main_Photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icons8-menu-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/liff_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/star+.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/star-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/main.8c2afc88213e4102.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/polyfills.0ba74f5e7074bbc3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/runtime.d264d3a42860edf0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/styles.a73b8538f4d7a389.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/TentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/TentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/crud/TentCrud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/crud/TentCrudInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fileIO/FileIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fileIO/FileIOInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fileIO/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mock/TentCrudMock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/TentServletConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/TentServletConfigInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tent.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn.ps1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ansi-html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ansi-html" afterDir="false" />
@@ -135,8 +194,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -154,77 +213,46 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2L0B46iWCa14A2iST6e4hQ013kd" />
+  <component name="ProjectId" id="2LNSyF3yj1rB5uryCBTsPFpzGH7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Data-Programming/lab2/back-end&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/dp2023/back-end",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Servlet" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java" />
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\mock" />
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\fileIO" />
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\crud" />
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\Entity" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\mock" />
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\crud" />
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\Servlet" />
-      <recent name="D:\dp2023\dp2023\lab2\back-end\src\main\java\fileIO" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Entity" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Smart Tomcat.Tomcat: back-end">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fileIO.Main" />
-      <module name="back-end" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fileIO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat: back-end" type="com.poratu.idea.plugins.tomcat" activateToolWindowBeforeRun="false" temporary="true">
+}]]></component>
+  <component name="RunManager">
+    <configuration name="tomcat-server" type="com.poratu.idea.plugins.tomcat">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="contextPath" value="/back-end" />
-      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="docBase" value="D:\dp2023\dp2023\lab2\back-end\src\main\webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/10.0.27" />
-          <option name="path" value="$PROJECT_DIR$/../../../Program Files/apache-tomcat-10.0.27" />
+          <option name="path" value="C:/Program Files/apache-tomcat-10.0.27" />
           <option name="version" value="10.0.27.0" />
         </TomcatInfo>
       </option>
@@ -233,41 +261,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Smart Tomcat.Tomcat: back-end" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Smart Tomcat.Tomcat: back-end" />
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7b0c231f-0b39-41b4-8784-2f37e6689412" name="Changes" comment="" />
-      <created>1674997927666</created>
+      <changelist id="d2f699d6-eeba-4f01-8008-53e1fb87318e" name="Changes" comment="" />
+      <created>1675710302375</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1674997927666</updated>
+      <updated>1675710302375</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change type of print the Json data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change type of print the Json data" />
   </component>
 </project>

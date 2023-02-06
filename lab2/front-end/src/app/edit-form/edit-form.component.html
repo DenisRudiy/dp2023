@@ -1,13 +1,44 @@
-<input type="text" #box (keyup)="getName(box.value)" placeholder="Change Name" name="name"><br>
-<input type="text" #img (keyup)="getImg(img.value)" placeholder="Change Img" name="img"><br>
-<form #f="ngForm" (keyup)="getPrice(f)">
-    <input type="number" name="price" ngModel placeholder="Change Price">
+<form class="edit-form">
+    <div class="small_fields">
+        <div class="group">      
+            <input type="text" #box (keyup)="getName(box.value)" name="name" required class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Change Name</label>
+        </div>
+        <div class="group">      
+            <input type="text" #img (keyup)="getImg(img.value)" name="img" required class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Change Img</label>
+        </div>
+    </div>
+    
+    <div class="small_fields">
+        <form #f="ngForm" (keyup)="getPrice(f)">
+            <div class="group">      
+                <input type="number" name="price" ngModel  required class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Change Price</label>
+            </div>
+        </form>
+        <form #w="ngForm" (keyup)="getRate(w)">
+            <div class="group">      
+                <input type="number" name="rate" ngModel required class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Change Rate</label>
+            </div>
+        </form>
+    </div>
+    
+    <div class="group">      
+        <input type="text" #desc (keyup)="getDescription(desc.value)" name="description" required class="Description">
+        <label>Change Description</label>
+    </div>
 </form>
-<form #w="ngForm" (keyup)="getRate(w)">
-    <input type="number" name="rate" ngModel placeholder="Change Rate">
-</form>
-<input type="text" #desc (keyup)="getDescription(desc.value)" placeholder="Change Description" name="description"><br>
 
-<button (click)="OnClick()">Click Me</button>
+<button (click)="OnClick()" class="Send">Click Me</button>
 
 

@@ -32,10 +32,15 @@ export class EditFormComponent {
   }
   getDescription(val: string) {
     console.warn(val)
-    this.img = val
+    this.description = val
   }
 
   OnClick(): void {
+    console.log(this.name)
+    console.log(this.img)
+    console.log(this.price)
+    console.log(this.rate)
+    console.log(this.description)
     this.service.updatePost(this.name, this.img, this.price, this.rate, this.description);
   }
 

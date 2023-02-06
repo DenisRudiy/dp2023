@@ -1,6 +1,13 @@
-Entity\EntityImg.class
-Entity\Entity.class
 Servlet\TentServlet.class
+mock\TentCrudMock.class
+Servlet\EntityServlet1.class
+mock\Lab2CrudMock.class
+fileIO\FileIO.class
 Entity\TentEntity.class
-Servlet\ImgServlet.class
-Servlet\Servlet1.class
+fileIO\FileIOInterface.class
+crud\FileCrud.class
+crud\Lab2CrudInterface.class
+fileIO\Main.class
+Entity\Entity.class
+Servlet\ServletConfig.class
+Servlet\ServletConfigInterface.class

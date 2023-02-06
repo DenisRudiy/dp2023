@@ -5,185 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2f699d6-eeba-4f01-8008-53e1fb87318e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jakarta_servlet_api_6_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_6_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_9_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TentCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TentCrud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TentCrudInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TentCrudInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/TentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/TentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileIO/FileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/FileIOInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileIO/FileIOInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mock/TentCrudMock.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfigInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfigInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/3rdpartylicenses.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.a73b8538f4d7a389.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.a73b8538f4d7a389.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/Entity/TentEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrud.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/crud/TentCrudInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/FileIO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/FileIOInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/fileIO/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/mock/TentCrudMock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/servlets/TentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/servlets/TentServletConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/classes/servlets/TentServletConfigInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/lib/gson-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/WEB-INF/lib/jakarta.servlet-api-6.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/Main_Photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/brand_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/company_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icon_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/icons8-menu-60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/liff_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/p_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/star+.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/assets/star-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/main.8c2afc88213e4102.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/polyfills.0ba74f5e7074bbc3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/runtime.d264d3a42860edf0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT/styles.a73b8538f4d7a389.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/TentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/TentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/crud/TentCrud.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/crud/TentCrudInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fileIO/FileIO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fileIO/FileIOInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fileIO/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mock/TentCrudMock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/TentServletConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/TentServletConfigInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tent.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/acorn.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ansi-html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ansi-html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ansi-html.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ansi-html.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/autoprefixer" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/autoprefixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/autoprefixer.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/autoprefixer.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist-lint" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist-lint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist-lint.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist-lint.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/browserslist.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/color-support" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/color-support" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/color-support.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/color-support.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/cssesc" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/cssesc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/cssesc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/cssesc.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/errno" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/errno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/errno.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/errno.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/esbuild" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/esbuild.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/esbuild.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/esparse" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/esparse.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/esparse.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/esvalidate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/esvalidate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/esvalidate.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/image-size" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/image-size" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/image-size.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/image-size.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/installed-package-contents" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/installed-package-contents" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/installed-package-contents.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/installed-package-contents.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/is-docker" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/is-docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/is-docker.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/is-docker.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/js-yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/js-yaml.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/js-yaml.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/jsesc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/jsesc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/jsesc.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/json5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/json5.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/json5.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/karma" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/karma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/karma.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/karma.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/lessc" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/lessc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/lessc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/lessc.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/mime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/mime.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/mime.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/mkdirp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/mkdirp.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/mkdirp.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/multicast-dns" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/multicast-dns" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/multicast-dns.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/multicast-dns.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/nanoid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/nanoid.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/nanoid.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/needle" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/needle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/needle.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/needle.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng-xi18n" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng-xi18n" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng-xi18n.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng-xi18n.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ng.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngc" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngc.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngcc" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngcc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngcc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/ngcc.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/node-gyp" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/node-gyp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/node-gyp.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/node-gyp.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/nopt" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/nopt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/nopt.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/nopt.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/pacote" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/pacote" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/pacote.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/pacote.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/parser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/parser.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/parser.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/regjsparser" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/regjsparser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/regjsparser.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/regjsparser.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/resolve" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/resolve.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/resolve.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/rimraf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/rimraf.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/rimraf.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/sass" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/sass.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/sass.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/semver.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/semver.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/terser" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/terser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/terser.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/terser.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/tree-kill" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/tree-kill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/tree-kill.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/tree-kill.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsc.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsserver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsserver.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/tsserver.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/uuid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/uuid.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/uuid.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack-dev-server" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack-dev-server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack-dev-server.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack-dev-server.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/webpack.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/which" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/which" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/.bin/which.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/.bin/which.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/@angular-devkit/build-angular/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/@angular-devkit/build-angular/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/node_modules/@angular-devkit/build-angular/builders.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/node_modules/@angular-devkit/build-angular/builders.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.7892ed9a8946ccee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/TentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/TentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/dp2023/back-end",
+    "last_opened_file_path": "C:/Program Files/Java/gson-2.9.0.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",

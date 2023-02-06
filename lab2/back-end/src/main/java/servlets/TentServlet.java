@@ -1,5 +1,6 @@
 package servlets;
 
+import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -7,6 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import crud.TentCrudInterface;
 import entity.TentEntity;
@@ -25,8 +27,17 @@ public class TentServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        ArrayList<TentEntity> tents = new ArrayList<TentEntity>();
+        tents.add(lab2Crud.readEntity());
+        
+        String TentJson = new Gson().toJson(tents);
+
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+
         PrintWriter out = response.getWriter();
-        out.println("["+lab2Crud.readEntity()+"]");
+        out.print(TentJson);
+        out.flush();
     }
 
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -14,15 +14,11 @@ export class FeaturedProductComponent {
     private service:TentServiceService,
     ){}
 
-  ngOnInit(): void {
-    this.getTentEntities()
-  }
-
-  getTentEntities(): void{
-    this.service.getTentEntities().subscribe(
-      (entities)=>{
-        this.TentList=entities;
-      }
-    )
-  }
+    ngOnInit(): void {
+      this.service.getTentEntities().subscribe(
+        (entities)=>{
+          this.TentList=entities;
+        }
+      )
+    }
 }

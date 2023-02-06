@@ -1,5 +1,5 @@
 .fetured_product {
-    height: 1600px;
+    height: 1200px;
 }
 .zagol {
     padding-left: 37%;
@@ -80,9 +80,8 @@
 }
 
 .f_p_content > p {
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
     font-size: 20px;
 }
@@ -90,13 +89,21 @@
     color: #1d1e23;
     padding-left: 44%;
 }
+.description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+}
 
 .A_rate {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 130px;
+    gap: 10px;
+    padding-left: 150px;
 }
-.A_rate > h3 > img {
+.A_rate > img {
+    padding-top: 10px;
     width: 30px;
-    height: auto;
+    height: 30px;
 }

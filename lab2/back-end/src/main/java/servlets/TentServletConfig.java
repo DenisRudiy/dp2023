@@ -20,7 +20,6 @@ public class TentServletConfig implements TentServletConfigInterface {
 
     @Override
     public TentCrudInterface getCrud() {
-        // TODO Auto-generated method stub
         return l2ci;
     }
 

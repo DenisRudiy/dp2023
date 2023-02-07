@@ -26,7 +26,6 @@ public class FileIO implements FileIOInterface {
             oos.writeObject(object);
             oos.close();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
@@ -43,7 +42,6 @@ public class FileIO implements FileIOInterface {
             ois.close();
 
         } catch (IOException | ClassNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 

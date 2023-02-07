@@ -35,6 +35,10 @@ export class EditFormComponent {
     this.description = val
   }
 
+  refreshPage(): void{
+    window.location.reload();
+  } 
+
   OnClick(): void {
     console.log(this.name)
     console.log(this.img)
@@ -42,6 +46,7 @@ export class EditFormComponent {
     console.log(this.rate)
     console.log(this.description)
     this.service.updatePost(this.name, this.img, this.price, this.rate, this.description);
+    this.refreshPage();
   }
 
 }

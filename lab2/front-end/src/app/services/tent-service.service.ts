@@ -16,7 +16,7 @@ export class TentServiceService {
   }
 
   public updatePost(postName: Object, postImg: Object, postPrice: Object, postRate: Object, postDesc: Object) {
-    this.http.put(this.url + "?name="+postName+"&img="+postImg+"&price="+postPrice+"&rate="+postRate+"&description="+postDesc, postDesc).subscribe(data => {
+    this.http.put(this.url + "?name="+postName+"&img=assets/"+postImg+".png&price="+postPrice+"&rate="+postRate+"&description="+postDesc, postDesc).subscribe(data => {
       console.log(data);
     });
   }

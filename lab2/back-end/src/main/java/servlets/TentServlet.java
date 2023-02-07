@@ -29,7 +29,7 @@ public class TentServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ArrayList<TentEntity> tents = new ArrayList<TentEntity>();
         tents.add(lab2Crud.readEntity());
-        
+
         String TentJson = new Gson().toJson(tents);
 
         response.setContentType("application/json");

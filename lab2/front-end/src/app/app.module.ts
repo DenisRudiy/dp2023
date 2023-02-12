@@ -12,7 +12,6 @@ import { CompaniesComponent } from './companies/companies.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { EditFormComponent } from './edit-form/edit-form.component';
-import { AddFormComponent } from './add-form/add-form.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { AddFormComponent } from './add-form/add-form.component';
     CompaniesComponent,
     FooterComponent,
     HomePageComponent,
-    EditFormComponent,
-    AddFormComponent
+    EditFormComponent
   ],
   imports: [
     BrowserModule,

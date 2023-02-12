@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class TentEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    private int id;
     private String name;
     private String img;
     private int rate;
@@ -12,9 +13,13 @@ public class TentEntity implements Serializable {
     private String description;
 
 
+    public TentEntity() {
 
-    public TentEntity(String name, String img, int rate, int price, String description) {
+    }
+
+    public TentEntity(int id, String name, String img, int rate, int price, String description) {
         super();
+        this.id = id;
         this.description = description;
         this.name = name;
         this.img = img;
@@ -23,6 +28,12 @@ public class TentEntity implements Serializable {
     }
 
 
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getDescription() {
         return description;
     }
@@ -63,7 +74,7 @@ public class TentEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "{\"name\": \""+name+"\",\"img\":\""+img+"\", \"price\":"+ price+", \"rate\":"+rate+", \"description\":\""+description+"\"}";
+        return "{\"id\": "+id+",\"name\": \""+name+"\",\"img\":\""+img+"\", \"price\":"+ price+", \"rate\":"+rate+", \"description\":\""+description+"\"}";
     }
 
 }

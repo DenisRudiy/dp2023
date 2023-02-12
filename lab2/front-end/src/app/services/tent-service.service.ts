@@ -1,23 +1,34 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { TentEntity } from '../interfaces/tent-entity';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TentServiceService {
-  url:string = "http://localhost:8080/back-end/TentServlet";
+  list = new BehaviorSubject<TentEntity[]>([])
+  url = "http://localhost:8080/back-end/TentServlet";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getTentEntities():Observable<TentEntity[]>{
+  getTentEntities(): Observable<TentEntity[]> {
     return this.http.get<TentEntity[]>(this.url);
   }
 
-  public updatePost(postName: Object, postImg: Object, postPrice: Object, postRate: Object, postDesc: Object) {
-    this.http.put(this.url + "?name="+postName+"&img=assets/"+postImg+".png&price="+postPrice+"&rate="+postRate+"&description="+postDesc, postDesc).subscribe(data => {
-      console.log(data);
-    });
+  updateTent(user: TentEntity): Observable<TentEntity[]> {
+    return this.http.put<TentEntity[]>(this.url + "/" + user.id, user);
+  }
+
+  postTent(user: TentEntity): Observable<TentEntity[]> {
+    return this.http.post<TentEntity[]>(this.url, user);
+  }
+
+  deleteUser(user: TentEntity): Observable<TentEntity[]> {
+    return this.http.delete<TentEntity[]>(this.url + "/" + user.id);
+  }
+
+  setList(list: TentEntity[]) {
+    this.list.next(list);
   }
 }

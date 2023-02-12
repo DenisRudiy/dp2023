@@ -6,6 +6,69 @@
   <component name="ChangeListManager">
     <list default="true" id="d2f699d6-eeba-4f01-8008-53e1fb87318e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TentCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TentCrud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TentCrudInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TentCrudInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/TentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/TentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileIO/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/TentServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/Main_Photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/brand_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/brand_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/brand_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/brand_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/brand_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/brand_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/brand_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/company_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/company_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/company_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/company_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/icon_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/icon_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/icon_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/icon_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/icons8-menu-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/liff_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/p_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/star+.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/star-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.93b33c5278cbaa9c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/polyfills.0ba74f5e7074bbc3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/runtime.d264d3a42860edf0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.a73b8538f4d7a389.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/back-end-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/TentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/TentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fileIO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fileIO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/TentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/TentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/add-form/add-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/add-form/add-form.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/add-form/add-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/add-form/add-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/edit-form/edit-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/edit-form/edit-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/edit-form/edit-form.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/edit-form/edit-form.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/edit-form/edit-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/edit-form/edit-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/featured-product/featured-product.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/home-page/home-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/interfaces/tent-entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/interfaces/tent-entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/app/services/tent-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/services/tent-service.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +79,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,14 +115,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/gson-2.9.0.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dp2023/dp2023/lab2/back-end&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Smart Tomcat.tomcat-server">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fileIO.Main" />
       <module name="back-end" />

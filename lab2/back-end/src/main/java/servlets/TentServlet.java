@@ -8,33 +8,31 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
+import java.util.List;
 
 import crud.TentCrudInterface;
 import entity.TentEntity;
+import tents.TentList;
 
-@WebServlet("/TentServlet")
+@WebServlet("/TentServlet/*")
 public class TentServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
+    private List<TentEntity> lu = new TentList().getTentList();
 
     TentServletConfigInterface servletConfig;
-    TentCrudInterface lab2Crud;
+    TentCrudInterface lab3Crud;
 
     public TentServlet() {
         super();
         this.servletConfig = new TentServletConfig();
-        this.lab2Crud = servletConfig.getCrud();
+        this.lab3Crud = servletConfig.getCrud();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ArrayList<TentEntity> tents = new ArrayList<TentEntity>();
-        tents.add(lab2Crud.readEntity());
-
-        String TentJson = new Gson().toJson(tents);
 
         response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
 
+        String TentJson = new Gson().toJson(lu);
         PrintWriter out = response.getWriter();
         out.print(TentJson);
         out.flush();
@@ -42,14 +40,31 @@ public class TentServlet extends HttpServlet {
 
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String name = request.getParameter("name");
-        String img = request.getParameter("img");
-        int rate = Integer.parseInt(request.getParameter("rate"));
-        int price = Integer.parseInt(request.getParameter("price"));
-        String description = request.getParameter("description");
+        TentEntity user = lab3Crud.tentParse(request);
+        int id = Integer.parseInt(request.getPathInfo().substring(1));
+        response.setContentType("application/json");
+        int index = lab3Crud.getIndexByTentId(id, lu);
+        lu.set(index,user);
+        doGet(request, response);
 
-        lab2Crud.updateEntity(new TentEntity(name,img,rate,price,description));
+    }
 
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        TentEntity tent = lab3Crud.tentParse(request);
+        tent.setId(lab3Crud.getNextId(lu));
+        lu.add(tent);
+        doGet(request, response);
+
+    }
+
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        int id = Integer.parseInt(request.getPathInfo().substring(1));
+        response.setContentType("application/json");
+        int index = lab3Crud.getIndexByTentId(id, lu);
+        lu.remove(index);
+        doGet(request, response);
     }
 
 }

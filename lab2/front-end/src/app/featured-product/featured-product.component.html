@@ -1,18 +1,60 @@
-<div class="fetured_product">
-        
-    <div class="zagol"><h1>Our</h1><h2>Products</h2></div>
-    <img src="assets/liff_1.png" alt="" class="liff_1">
-    <div class="f_p_title">
-        <p>Orders that people from all over the world buy from us most often</p>
-    </div>    
+<div class="featured_product">
+
+    <div class="form-section">
+
+        <form #form1="ngForm" (ngSubmit)="addTent(form1.value)" class="add-form">
+            <div>
+                <input type="hidden" name="id" ngModel="-1">
+                <div class="small_fields">
+                    <div class="group">
+                        <input type="text" name="name" ngModel="" required class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Type Name</label>
+                    </div>
+                    <div class="group">
+                        <input type="text" name="img" ngModel="" required class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Type Img</label>
+                    </div>
+                    <div class="group">
+                        <input type="number" name="price" ngModel="Type price" required class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Type Price</label>
+                    </div>
+                    <div class="group">
+                        <input type="number" name="rate" ngModel="Type rate" required class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Type Rate</label>
+                    </div>
+                </div>
+                <div class="group">
+                    <textarea type="text" name="description" ngModel="" required class="Description"></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Type Description</label>
+                </div>
+            </div>
+            <div class="add-button">
+                <input type="submit" value="Add Tent" class="Send">
+            </div>
+        </form>
+
+        <app-edit-form [tent]="selectedTent" (updated)="updateTents()"></app-edit-form>
+
+    </div>
 
     <div class="f_p_table">
+
         <div *ngFor="let tent of TentList">
             <div class="f_p_content">
                 <div class="img_container">
-                    <img src="{{tent.img}}" alt="">
+                    <img src="{{tent.img}}" alt="" (click)="onSelect(tent)">
                 </div>
-                <p>{{tent.name}}</p>
+                <p (click)="onSelect(tent)">{{tent.name}}</p>
                 <div class="A_rate">
                     <h3>{{tent.rate}}</h3>
                     <img src="assets/star+.png" alt="">
@@ -22,6 +64,7 @@
                 <button class="buy">Add to Cart</button>
             </div>
         </div>
+
     </div>
 
 </div>

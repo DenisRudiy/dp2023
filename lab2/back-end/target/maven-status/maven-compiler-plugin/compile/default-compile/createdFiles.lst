@@ -1,0 +1,10 @@
+fileIO\FileIOInterface.class
+crud\TentCrud.class
+servlets\TentServletConfigInterface.class
+servlets\TentServlet.class
+fileIO\Main.class
+crud\TentCrudInterface.class
+fileIO\FileIO.class
+entity\TentEntity.class
+tents\TentList.class
+servlets\TentServletConfig.class

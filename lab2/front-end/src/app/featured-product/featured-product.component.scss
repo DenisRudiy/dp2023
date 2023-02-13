@@ -1,5 +1,5 @@
 .featured_product {
-    height: 1650px;
+    height: 1825px;
 }
 
 .form_section {
@@ -15,6 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    z-index: 1;
 }
 
 
@@ -146,71 +147,6 @@ label {
     width: 50%;
 }
 
-.highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-input:focus~.highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-}
-
-.highlightx {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-input:focus~.highlightx {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-}
-
-@-webkit-keyframes inputHighlighter {
-    from {
-        background: #e0af1a;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@-moz-keyframes inputHighlighter {
-    from {
-        background: #e0af1a;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@keyframes inputHighlighter {
-    from {
-        background: #e0af1a;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
 .add-button {
     width: 160px;
     padding-top: 75px;
@@ -328,7 +264,7 @@ input:focus~.highlightx {
     height: 30px;
 }
 
-.add-new {
+.cart_btn {
     margin-left: 45%;
     width: 10%;
     height: 50px;
@@ -346,6 +282,60 @@ input:focus~.highlightx {
     transition-duration: 0.5s;
 }
 
-.add-new:hover {
+.cart_btn:hover {
     background-color: #9c681f;
+}
+
+.cart {
+    background-color: #999;
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 600px;
+    margin-left: 30%;
+    margin-right: 30%;
+    z-index: 1500;
+    border-radius: 5px;
+
+}
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    div {
+        margin: 5px;
+        padding: 5px;
+        border: 1px #1d1e23 solid;
+        width: 150px;
+
+        p {
+            text-align: center
+        }
+
+        .buy-img {
+            margin-left: 32.5px;
+            width: 75px;
+            height: auto;
+        }
+        form {
+            .count {
+                margin-left: 10px;
+                font-size: 12px;
+                display: block;
+                width: 75px;
+                padding-left: 55px;
+                border: none;
+                background-color: rgba(1, 1, 1, 0);
+                border-bottom: 1px solid #fea526;
+                outline:none;
+                
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+    }
 }

@@ -22,13 +22,13 @@ import { EditFormComponent } from './edit-form/edit-form.component';
     CompaniesComponent,
     FooterComponent,
     HomePageComponent,
-    EditFormComponent
+    EditFormComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

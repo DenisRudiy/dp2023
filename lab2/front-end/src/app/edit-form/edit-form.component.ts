@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { TentServiceService } from '../services/tent-service.service';
-import { NgForm } from '@angular/forms';
 import { TentEntity } from '../interfaces/tent-entity';
 
 @Component({

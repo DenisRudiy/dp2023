@@ -1,5 +1,19 @@
 <div class="featured_product">
 
+    <button class="cart_btn" (click)="showCart=!showCart">View Cart</button>
+    <div *ngIf="showCart" class="cart">
+        <div class="cart-items">
+            <div *ngFor="let tent of TentBuyList">
+                <p>{{tent.name}}</p>
+                <img src="{{tent.img}}" class="buy-img">
+                <p>{{tent.price}}</p>
+                <form #c="ngForm" (keyup)="getCount(c)">
+                    <input type="number" name="count" ngModel="1" required class="count">
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="form-section">
 
         <form #form1="ngForm" (ngSubmit)="addTent(form1.value)" class="add-form">
@@ -61,7 +75,7 @@
                 </div>
                 <h2>{{tent.price}} kg</h2>
                 <p class="description">{{tent.description}}</p>
-                <button class="buy">Add to Cart</button>
+                <button class="buy" (click)="onBuy(tent)">Add to Cart</button>
             </div>
         </div>
 

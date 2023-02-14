@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .featured_product {
     height: 1825px;
 }
@@ -18,9 +20,6 @@
     z-index: 1;
 }
 
-
-
-
 .small_fields {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +27,7 @@
 }
 
 .Description {
-    width: 1130px;
+    width: 930px;
     height: 50px;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
@@ -46,14 +45,14 @@
 .group {
     position: relative;
     margin-bottom: 45px;
-    width: 250px;
+    width: 200px;
 }
 
 .input {
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 250px;
+    width: 200px;
     border: none;
     border-bottom: 1px solid #757575;
 }
@@ -95,58 +94,6 @@ label {
     width: 215px;
 }
 
-.bar:before,
-.bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #e0af1a;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-.bar:before {
-    left: 50%;
-}
-
-.bar:after {
-    right: 50%;
-}
-
-.barx:before,
-.barx:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #e0af1a;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-.barx:before {
-    left: 50%;
-}
-
-.barx:after {
-    right: 50%;
-}
-
-.input:focus~.bar:before,
-.input:focus~.bar:after {
-    width: 50%;
-}
-
-.Description:focus~.barx:before,
-.Description:focus~.barx:after {
-    width: 50%;
-}
-
 .add-button {
     width: 160px;
     padding-top: 75px;
@@ -173,27 +120,26 @@ label {
     background-color: #9c681f;
 }
 
-
-
-
-
-
 .f_p_table {
-    margin-left: 250px;
-    margin-right: 250px;
+    @include size(size-laptop) {margin-left: 100px; margin-right: 100px;}
+    @include size(size-3) {margin-left: 100px; margin-right: 100px;}
+    @include size(size-2) {margin-left: 150px; margin-right: 150px;}
+    @include size(size-1) {margin-left: 250px; margin-right: 250px;}
     height: 500px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .f_p_content {
-    height: 570px;
-    width: 348px;
+    @include size(size-laptop) {height: 570px; width: 268px;}
+    @include size(size-3) {height: 570px; width: 268px;}
+    @include size(size-2) {height: 570px; width: 308px;}
+    @include size(size-1) {height: 570px; width: 348px;}
     border: 1px solid #a4a9ae;
 }
 
 .buy {
-    margin-left: 100px;
+    margin-left: 25%;
     width: 150px;
     height: 50px;
     border-radius: 3px;
@@ -220,7 +166,7 @@ label {
 
 .f_p_content>.img_container>img {
     cursor: pointer;
-    padding-left: 50px;
+    padding-left: 5%;
     width: 250px;
     height: auto;
 
@@ -319,6 +265,7 @@ label {
             width: 75px;
             height: auto;
         }
+
         form {
             .count {
                 margin-left: 10px;
@@ -329,9 +276,10 @@ label {
                 border: none;
                 background-color: rgba(1, 1, 1, 0);
                 border-bottom: 1px solid #fea526;
-                outline:none;
-                
+                outline: none;
+
             }
+
             input::-webkit-outer-spin-button,
             input::-webkit-inner-spin-button {
                 -webkit-appearance: none;

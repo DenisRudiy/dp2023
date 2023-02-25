@@ -1,0 +1,42 @@
+<div *ngIf="tent" class="edit-form">
+    <!-- <h3>Update Tent</h3> -->
+    <div>
+        <input type="hidden" [(ngModel)]="tent.id">
+        <div class="small_fields">
+            <div class="group">      
+                <input type="text" [(ngModel)]="tent.name" required class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Change Name</label>
+            </div>
+            <div class="group">      
+                <input type="text" [(ngModel)]="tent.img" required class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Change Img</label>
+            </div>
+            <div class="group">      
+                <input type="number" [(ngModel)]="tent.price" required class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Change Price</label>
+            </div>
+            <div class="group">      
+                <input type="number" [(ngModel)]="tent.rate" required class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Change Rate</label>
+            </div>
+        </div>
+        <div class="group">      
+            <textarea type="text" [(ngModel)]="tent.description" required class="Description"></textarea>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Change Description</label>
+        </div>
+    </div>
+    <div class="edit-buttons">
+        <button (click)="Btn_Click()" class="Send">Update Tent</button>
+        <button (click)="deleteTent(tent)" class="Send">Delete Tent</button>
+    </div>
+</div>

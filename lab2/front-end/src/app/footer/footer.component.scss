@@ -1,0 +1,68 @@
+footer {
+    height: 450px;
+    background-color: #1d1e23;
+}
+.f_logo {
+    padding-top: 50px;
+}
+.f_logo > img {
+    height: 100px;
+    width: auto;
+    padding-top: 30px;
+    padding-left: 48%;
+}
+.f_logo > h1 {
+    color: #fea526;
+    padding-left: 42.5%;
+    margin-top: 0px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+.Ukraine {
+    padding-left: 44.5%;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#blue {
+    color: rgb(53, 53, 212);
+}
+#yellow {
+    color: yellow;
+}
+.f_contacts {
+    padding-left: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #7d8791;
+    gap: 20px;
+}
+.f_contacts > p {
+    cursor: pointer;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.f_contacts >p:hover {
+    color: #fea526;
+}
+.f_companies {
+    padding-top: 30px;
+    padding-left: 46%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.f_companies > img {
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.f_companies > img:hover{
+     transform: scale(1.25);
+}

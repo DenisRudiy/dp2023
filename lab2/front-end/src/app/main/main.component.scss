@@ -1,0 +1,121 @@
+@import '../../styles.scss';
+
+.main {
+    height: 700px;
+    background-color: #0b0b0f;
+    color: #fff;
+}
+.main > img {
+    padding-top: 50px;
+    padding-left: 50%;
+    height: 500px;
+    width: auto;
+}
+.main > h1{ 
+    @include size(size-laptop) {margin-left: 480px;}
+    @include size(size-3) {margin-left: 500px;}
+    @include size(size-2) {margin-left: 600px;}
+    @include size(size-1) {margin-left: 700px;}
+    margin-top: -400px;
+    margin-bottom: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.main > h6{
+    @include size(size-laptop) {margin-left: 510px;}
+    @include size(size-3) {margin-left: 530px;}
+    @include size(size-2) {margin-left: 630px;}
+    @include size(size-1) {margin-left: 730px;}
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+.main > h2 {
+    @include size(size-laptop) {margin-left: 520px;}
+    @include size(size-3) {margin-left: 540px;}
+    @include size(size-2) {margin-left: 640px;}
+    @include size(size-1) {margin-left: 740px;}
+    margin-top: -50px;
+    font-size: 50px;
+    font-weight: 100;
+    font-weight: 900;
+    color: #fea526;
+}
+
+.m_buy > a{ text-decoration: none; color: #7d8791;}
+.m_buy { 
+    @include size(size-laptop) {margin-left: 500px;}
+    @include size(size-3) {margin-left: 520px;}
+    @include size(size-2) {margin-left: 620px;}
+    @include size(size-1) {margin-left: 720px;}
+    margin-top: -30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid #fff;
+    background-color: rgba(28,28,28,0);
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.m_buy:hover { 
+    background-color: #fff;
+    color: #121215;
+}
+
+.main_table {
+    @include size(size-laptop) {margin-left: 140px;}
+    @include size(size-3) {margin-left: 150px;}
+    @include size(size-2) {margin-left: 250px;}
+    @include size(size-1) {margin-left: 300px;}
+    margin-top: -350px;
+    width: 250px;
+    height: 450px;
+    color: #fff;
+    background-color: #2b2c2c;
+}
+.main_table > div {
+    padding-left: 30px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    background-color: #fea526;
+}
+.main_table > div > h1 {
+    margin: 0;
+    font-size: 30px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.main_table > div > img {
+    padding-top: 17px;
+    width: 25px;
+    height: 25px;
+}
+.main_table > button > a{ text-decoration: none; color: #fff;}
+.main_table > button {
+    letter-spacing: 3px;
+    width: 250px;
+    height: 80px;
+    border: none;
+    background-color: rgba(28,28,28,0);
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.main_table > button:hover { 
+    background-color: #3c3f3f;
+}

@@ -1,10 +1,15 @@
 package entity;
 
-import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-public class TentEntity implements Serializable {
-    private static final long serialVersionUID = 1L;
 
+@Entity
+@Table(name="tents")
+public class TentEntity{
+
+    @Id
     private int id;
     private String name;
     private String img;
@@ -64,7 +69,7 @@ public class TentEntity implements Serializable {
         this.rate = rate;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 

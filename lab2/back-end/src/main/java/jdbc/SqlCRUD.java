@@ -56,6 +56,9 @@ public class SqlCRUD implements TentCRUDInterface<TentEntity> {
             );
 
             session.getTransaction().commit();
+
+
+
         }
     }
 

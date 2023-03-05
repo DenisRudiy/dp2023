@@ -17,7 +17,8 @@ import { GalleriaModule } from 'primeng/galleria'
 import { PhotoService } from './services/photo-service.service'
 import { AnimateModule } from 'primeng/animate'
 import { ButtonModule } from 'primeng/button'
-import { SidebarModule } from 'primeng/sidebar'
+import { DialogModule } from 'primeng/dialog';
+import { ShopComponent } from './components/Global/shop/shop.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SidebarModule } from 'primeng/sidebar'
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import { SidebarModule } from 'primeng/sidebar'
     HttpClientModule,
     AnimateModule,
     ButtonModule,
-    SidebarModule,
+    DialogModule,
     BrowserAnimationsModule
   ],
   providers: [PhotoService],

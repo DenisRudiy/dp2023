@@ -6,5 +6,11 @@ import { Component } from '@angular/core'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  visibleSidebar: any
+  displayModal: any
+  position!: string
+
+  showModalDialog(position: string) {
+    this.position = position
+    this.displayModal = true
+  }
 }

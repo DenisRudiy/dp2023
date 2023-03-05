@@ -29,15 +29,18 @@
       type=""
       icon="pi pi-shopping-cart"
       class="p-button-rounded"
-      (click)="visibleSidebar = !visibleSidebar"
+      (click)="showModalDialog('top')"
     ></button>
   </div>
-  <p-sidebar
-    [(visible)]="visibleSidebar"
-    position="right"
-    [baseZIndex]="10000"
-    p-sidebar-3xl
+  <p-dialog
+    header="Godfather I"
+    [(visible)]="displayModal"
+    [position]="position"
+    [modal]="true"
+    [style]="{ width: '60vw' }"
+    [draggable]="false"
+    [resizable]="false"
   >
     <app-shopping-cart></app-shopping-cart>
-  </p-sidebar>
+  </p-dialog>
 </nav>

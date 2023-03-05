@@ -1,6 +1,6 @@
 .nav {
   @apply h-20 bg-sky-900 fixed px-10 z-10 flex;
-  width: 60%;
+  width: 75%;
 
   img {
     @apply w-16 h-16 mt-2;
@@ -16,5 +16,8 @@
   }
   .shopping_cart {
     @apply py-5 flex justify-end w-full;
+  }
+  .cart {
+    @apply z-10 fixed;
   }
 }

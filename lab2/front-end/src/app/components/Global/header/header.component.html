@@ -1,0 +1,43 @@
+<nav class="nav">
+  <img
+    src="https://img.icons8.com/external-others-inmotus-design/67/000000/external-Guitar-vkontakte-others-inmotus-design-4.png"
+  />
+  <ul>
+    <li>
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Main"
+        class="p-button-raised p-button-text"
+      ></button>
+    </li>
+    <li>
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Guitar Servlet"
+        class="p-button-raised p-button-text"
+      ></button>
+    </li>
+  </ul>
+  <div class="shopping_cart">
+    <button
+      pButton
+      pRipple
+      type=""
+      icon="pi pi-shopping-cart"
+      class="p-button-rounded"
+      (click)="visibleSidebar = !visibleSidebar"
+    ></button>
+  </div>
+  <p-sidebar
+    [(visible)]="visibleSidebar"
+    position="right"
+    [baseZIndex]="10000"
+    p-sidebar-3xl
+  >
+    <app-shopping-cart></app-shopping-cart>
+  </p-sidebar>
+</nav>

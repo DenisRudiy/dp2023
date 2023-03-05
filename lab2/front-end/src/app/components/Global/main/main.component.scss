@@ -1,0 +1,17 @@
+.main {
+  @apply pt-24 mx-3;
+
+  .main_info {
+    @apply p-5 px-28;
+
+    .main_title {
+      @apply px-10 pb-9;
+      span {
+        @apply text-green-400;
+      }
+    }
+    .main_btn {
+      @apply flex justify-center py-10;
+    }
+  }
+}

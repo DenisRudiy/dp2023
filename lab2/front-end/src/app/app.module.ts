@@ -1,36 +1,43 @@
-import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing-module';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
-import { FeaturedProductComponent } from './featured-product/featured-product.component';
-import { CompaniesComponent } from './companies/companies.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { EditFormComponent } from './edit-form/edit-form.component';
+import { AppRoutingModule } from './app-routing.module'
+import { AppComponent } from './app.component'
+import { HttpClientModule } from '@angular/common/http'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+//    Components Imports
+import { HeaderComponent } from './components/Global/header/header.component'
+import { FooterComponent } from './components/Global/footer/footer.component'
+import { MainComponent } from './components/Global/main/main.component'
+import { ShoppingCartComponent } from './components/Small/shopping-cart/shopping-cart.component'
+
+//    PrimeNG UI Library Imports
+import { GalleriaModule } from 'primeng/galleria'
+import { PhotoService } from './services/photo-service.service'
+import { AnimateModule } from 'primeng/animate'
+import { ButtonModule } from 'primeng/button'
+import { SidebarModule } from 'primeng/sidebar'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent,
-    FeaturedProductComponent,
-    CompaniesComponent,
     FooterComponent,
-    HomePageComponent,
-    EditFormComponent,
+    MainComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     AppRoutingModule,
-    FormsModule,
+    GalleriaModule,
+    HttpClientModule,
+    AnimateModule,
+    ButtonModule,
+    SidebarModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [PhotoService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -40,4 +40,14 @@ export class ShopComponent implements OnInit {
       this.sortField = value
     }
   }
+
+  Click(value: any) {
+    this.sortOrder = -1
+    this.sortField = value.substring(1, value.length)
+  }
+
+  Click_2(value: any) {
+    this.sortOrder = 1
+    this.sortField = value
+  }
 }

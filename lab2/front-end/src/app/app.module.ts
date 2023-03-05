@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { FormsModule } from '@angular/forms'
 
 //    Components Imports
 import { HeaderComponent } from './components/Global/header/header.component'
@@ -17,8 +18,11 @@ import { GalleriaModule } from 'primeng/galleria'
 import { PhotoService } from './services/photo-service.service'
 import { AnimateModule } from 'primeng/animate'
 import { ButtonModule } from 'primeng/button'
-import { DialogModule } from 'primeng/dialog';
+import { DialogModule } from 'primeng/dialog'
 import { ShopComponent } from './components/Global/shop/shop.component'
+import { DataViewModule } from 'primeng/dataview'
+import { DropdownModule } from 'primeng/dropdown'
+import { RatingModule } from 'primeng/rating'
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import { ShopComponent } from './components/Global/shop/shop.component'
     AnimateModule,
     ButtonModule,
     DialogModule,
-    BrowserAnimationsModule
+    DataViewModule,
+    DropdownModule,
+    RatingModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [PhotoService],
   bootstrap: [AppComponent]

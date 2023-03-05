@@ -1,1 +1,54 @@
-<p>shop works!</p>
+<div class="card">
+  <p-dataView
+    #dv
+    [value]="guitars"
+    [paginator]="true"
+    [rows]="5"
+    filterBy="name"
+    [sortField]="sortField"
+    [sortOrder]="sortOrder"
+    layout="list"
+  >
+    <ng-template pTemplate="header">
+      <div>
+        <p-dropdown
+          [options]="sortOptions"
+          (onChange)="onSortChange($event)"
+        ></p-dropdown>
+      </div>
+    </ng-template>
+    <ng-template let-guitar pTemplate="listItem">
+      <div class="col-12">
+        <div class="product-list-item">
+          <img src="{{ guitar.photo }}" alt="" />
+          <div class="product-list-detail">
+            <div class="product-name">{{ guitar.name }}</div>
+            <div class="product-description">{{ guitar.description }}</div>
+            <p-rating
+              [(ngModel)]="guitar.rate"
+              [readonly]="true"
+              [cancel]="false"
+            ></p-rating>
+            <i class="pi pi-tag product-category-icon"></i
+            ><span class="product-category">{{ guitar.category }}</span>
+          </div>
+          <div class="product-list-action">
+            <span class="product-price">${{ guitar.price }}</span>
+            <p-button
+              icon="pi pi-shopping-cart"
+              type=""
+              label="Add to Cart"
+              [disabled]="guitar.inventoryStatus === 'OUTOFSTOCK'"
+            ></p-button>
+            <span
+              [class]="
+                'product-badge status-' + guitar.inventoryStatus.toLowerCase()
+              "
+              >{{ guitar.inventoryStatus }}</span
+            >
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-dataView>
+</div>

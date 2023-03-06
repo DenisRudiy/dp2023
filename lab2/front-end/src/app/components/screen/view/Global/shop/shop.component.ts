@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { SelectItem } from 'primeng/api'
 import { Guitar } from 'src/app/interfaces/guitar'
 import { ShopService } from 'src/app/services/shop.service'
-//[(ngModel)]="sortKey"
+
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
@@ -11,11 +11,18 @@ import { ShopService } from 'src/app/services/shop.service'
 export class ShopComponent implements OnInit {
   guitars!: Guitar[]
 
+  @Output() newItemEvent = new EventEmitter<string>()
+  addNewItem(value: string) {
+    this.newItemEvent.emit(value)
+  }
+
   sortOptions!: SelectItem[]
 
   sortOrder!: number
 
   sortField!: string
+
+  selectedGuitar?: Guitar
 
   constructor(private shopService: ShopService) {}
 
@@ -38,6 +45,14 @@ export class ShopComponent implements OnInit {
     } else {
       this.sortOrder = 1
       this.sortField = value
+    }
+  }
+
+  onSelect(guitar: Guitar) {
+    if (this.selectedGuitar && guitar.id == this.selectedGuitar.id) {
+      this.selectedGuitar = undefined
+    } else {
+      this.selectedGuitar = guitar
     }
   }
 

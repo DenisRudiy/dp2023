@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core'
 import { Guitar } from 'src/app/interfaces/guitar'
 import { HttpClient } from '@angular/common/http'
+import { Subject } from 'rxjs'
 
 @Injectable({
   providedIn: 'root'

@@ -1,0 +1,9 @@
+.footer {
+  @apply bg-slate-800 h-36;
+  div {
+    @apply flex justify-center pt-6;
+    button {
+      @apply mx-1;
+    }
+  }
+}

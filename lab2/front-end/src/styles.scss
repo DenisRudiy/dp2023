@@ -2,5 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "primeng/resources/themes/vela-green/theme.css";
-@import "../node_modules/primeicons/primeicons.css";
+@import 'primeng/resources/themes/vela-green/theme.css';
+@import '../node_modules/primeicons/primeicons.css';
+
+html {
+  scroll-behavior: smooth;
+}

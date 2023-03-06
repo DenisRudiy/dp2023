@@ -15,8 +15,8 @@
           label="Price High to Low"
           type=""
           (onClick)="Click('!price')"
-          style="padding-right: 20px"
         ></p-button>
+        <div class="w-5"></div>
         <p-button
           label="Price Low to High"
           type=""
@@ -42,9 +42,11 @@
           <div class="product-list-action">
             <span class="product-price">${{ guitar.price }}</span>
             <p-button
-              icon="pi pi-shopping-cart"
+              icon="pi pi-cart-plus"
               type=""
               label="Add to Cart"
+              styleClass="p-button-sm"
+              (onClick)="addNewItem('Stone')"
               [disabled]="guitar.inventoryStatus === 'OUTOFSTOCK'"
             ></p-button>
             <span

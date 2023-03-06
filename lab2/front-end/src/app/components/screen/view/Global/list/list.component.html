@@ -1,0 +1,23 @@
+<div>
+  <p-speedDial
+    [model]="items"
+    direction="left"
+    type="semi-circle"
+    buttonClassName="p-button-success"
+    class="circle"
+    [transitionDelay]="80"
+    showIcon="pi pi-bars"
+    hideIcon="pi pi-times"
+  ></p-speedDial>
+</div>
+<p-dialog
+  header="Your Cart"
+  [(visible)]="displayModal"
+  [position]="position"
+  [modal]="true"
+  [style]="{ width: '60vw' }"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <app-shopping-cart [word]="word"></app-shopping-cart>
+</p-dialog>

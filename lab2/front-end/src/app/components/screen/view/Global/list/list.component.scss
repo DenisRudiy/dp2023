@@ -1,0 +1,10 @@
+div {
+  @apply absolute;
+  width: 100%;
+  .circle {
+    position: fixed;
+    margin-top: 630px;
+    padding-left: 92%;
+    z-index: 1500;
+  }
+}

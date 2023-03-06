@@ -9,15 +9,9 @@
     @apply flex items-center pl-10;
     li {
       @apply px-5 py-2;
-      button {
-        @apply w-36;
+      h2 {
+        @apply text-2xl text-green-400 font-bold;
       }
     }
-  }
-  .shopping_cart {
-    @apply py-5 flex justify-end w-full;
-  }
-  .cart {
-    @apply z-10 fixed;
   }
 }

@@ -1,0 +1,40 @@
+<p-orderList
+  [listStyle]="{ 'max-height': '30rem' }"
+  header="List of Guitars"
+  filterBy="name"
+  filterPlaceholder="Filter by name"
+  [dragdrop]="false"
+  controlsPosition="right"
+>
+  <ng-template let-guitar pTemplate="item">
+    <div class="product-item">
+      <div class="image-container">
+        <img src="{{ guitar.photo }}" alt="" class="w-24" />
+      </div>
+      <div class="product-list-detail">
+        <h5 class="mb-2">{{ guitar.name }}</h5>
+        <i class="pi pi-tag product-category-icon"></i>
+        <span class="product-category">{{ guitar.category }}</span>
+      </div>
+      <div class="product-list-action">
+        <h6 class="mb-2">${{ guitar.price }}</h6>
+        <span
+          [class]="
+            'product-badge status-' + guitar.inventoryStatus.toLowerCase()
+          "
+          >{{ guitar.inventoryStatus }}</span
+        >
+      </div>
+    </div>
+  </ng-template>
+</p-orderList>
+<div class="h-5"></div>
+<div class="flex justify-center">
+  <p-button
+    icon="pi pi-check"
+    type=""
+    label="Buy"
+    styleClass="p-button-lg"
+  ></p-button>
+  <p>Hello My {{ word }} World!!!</p>
+</div>

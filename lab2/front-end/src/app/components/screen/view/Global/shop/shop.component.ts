@@ -11,11 +11,6 @@ import { ShopService } from 'src/app/services/shop.service'
 export class ShopComponent implements OnInit {
   guitars!: Guitar[]
 
-  @Output() newItemEvent = new EventEmitter<string>()
-  addNewItem(value: string) {
-    this.newItemEvent.emit(value)
-  }
-
   sortOptions!: SelectItem[]
 
   sortOrder!: number
@@ -64,5 +59,10 @@ export class ShopComponent implements OnInit {
   Click_2(value: any) {
     this.sortOrder = 1
     this.sortField = value
+  }
+
+  @Output() newItemEvent = new EventEmitter<Guitar>()
+  addNewItem(guitar: Guitar) {
+    this.newItemEvent.emit(guitar)
   }
 }

@@ -29,6 +29,9 @@ import { SpeedDialModule } from 'primeng/speeddial'
 import { ListComponent } from './components/screen/view/Global/list/list.component'
 import { OrderListModule } from 'primeng/orderlist'
 import { ScreenComponent } from './components/screen/screen.component'
+import { SliderModule } from 'primeng/slider'
+import { MessagesModule } from 'primeng/messages'
+import { MessageModule } from 'primeng/message'
 
 @NgModule({
   declarations: [
@@ -56,6 +59,9 @@ import { ScreenComponent } from './components/screen/screen.component'
     RatingModule,
     SpeedDialModule,
     OrderListModule,
+    SliderModule,
+    MessagesModule,
+    MessageModule,
     BrowserAnimationsModule,
     FormsModule
   ],

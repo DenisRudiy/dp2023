@@ -1,40 +1,34 @@
-<p-orderList
-  [listStyle]="{ 'max-height': '30rem' }"
-  header="List of Guitars"
-  filterBy="name"
-  filterPlaceholder="Filter by name"
-  [dragdrop]="false"
-  controlsPosition="right"
->
-  <ng-template let-guitar pTemplate="item">
-    <div class="product-item">
-      <div class="image-container">
-        <img src="{{ guitar.photo }}" alt="" class="w-24" />
-      </div>
-      <div class="product-list-detail">
-        <h5 class="mb-2">{{ guitar.name }}</h5>
-        <i class="pi pi-tag product-category-icon"></i>
-        <span class="product-category">{{ guitar.category }}</span>
-      </div>
-      <div class="product-list-action">
-        <h6 class="mb-2">${{ guitar.price }}</h6>
-        <span
-          [class]="
-            'product-badge status-' + guitar.inventoryStatus.toLowerCase()
-          "
-          >{{ guitar.inventoryStatus }}</span
-        >
-      </div>
+<div class="cart">
+  <div *ngFor="let g of guitar" class="product-item my-4 mx-4">
+    <div class="image-container">
+      <img src="{{ g.photo }}" alt="{{ g.name }}" />
     </div>
-  </ng-template>
-</p-orderList>
-<div class="h-5"></div>
-<div class="flex justify-center">
-  <p-button
-    icon="pi pi-check"
+    <div class="product-list-detail">
+      <h5 class="mb-2">{{ g.name }}</h5>
+      <i class="pi pi-tag product-category-icon"></i>
+      <span class="product-category">{{ g.category }}</span>
+    </div>
+    <div class="product-list-action mr-8">
+      <h6 class="mb-2">${{ g.price }}</h6>
+      <span
+        [class]="'product-badge status-' + g.inventoryStatus.toLowerCase()"
+        >{{ g.inventoryStatus }}</span
+      >
+    </div>
+  </div>
+</div>
+<div class="mt-5 text-green-300 font-bold flex justify-center">
+  <h2>Total: ${{ price }}</h2>
+</div>
+<div class="flex justify-center ml-5 mt-5">
+  <button
+    pButton
+    pRipple
     type=""
     label="Buy"
-    styleClass="p-button-lg"
-  ></p-button>
-  <p>Hello My {{ word }} World!!!</p>
+    class="mr-5"
+    (click)="onBuy()"
+    icon="pi pi-shopping-cart"
+  ></button>
 </div>
+<p-messages></p-messages>

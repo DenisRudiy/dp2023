@@ -19,5 +19,9 @@
   [draggable]="false"
   [resizable]="false"
 >
-  <app-shopping-cart [word]="word"></app-shopping-cart>
+  <app-shopping-cart
+    [guitar]="guitar"
+    [price]="price"
+    (delete_guitars)="OnDel($event)"
+  ></app-shopping-cart>
 </p-dialog>

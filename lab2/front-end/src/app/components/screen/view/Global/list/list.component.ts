@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { MenuItem } from 'primeng/api'
 import { ViewportScroller } from '@angular/common'
+import { Guitar } from 'src/app/interfaces/guitar'
 
 @Component({
   selector: 'app-list',
@@ -8,13 +9,35 @@ import { ViewportScroller } from '@angular/common'
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  @Input() word = ''
+  @Input() guitar!: Guitar[]
+  @Input() price!: number
+
+  @Output() delete_guitars = new EventEmitter<Guitar[]>() // list -> screen
+  DeleteGuitars(guitars: Guitar[]) {
+    this.delete_guitars.emit(guitars)
+  }
+
+  // shopping-cart -> list
+  OnDel(delete_guitars: Guitar[]) {
+    this.DeleteGuitars(delete_guitars)
+  }
+
+  constructor(private viewportScroller: ViewportScroller) {}
 
   items!: MenuItem[]
   displayModal: any
   position!: string
 
-  constructor(private viewportScroller: ViewportScroller) {}
+  toTop() {
+    this.viewportScroller.scrollToPosition([0, 0])
+  }
+  toEnd() {
+    this.viewportScroller.scrollToPosition([0, 2000])
+  }
+  showModalDialog(position: string) {
+    this.position = position
+    this.displayModal = true
+  }
 
   ngOnInit(): void {
     this.items = [
@@ -27,11 +50,9 @@ export class ListComponent implements OnInit {
       {
         icon: 'pi pi-list'
       },
+
       {
-        icon: 'pi pi-shopping-cart',
-        command: () => {
-          this.showModalDialog('top')
-        }
+        icon: 'pi pi-plus-circle'
       },
       {
         icon: 'pi pi-github',
@@ -40,19 +61,11 @@ export class ListComponent implements OnInit {
         }
       },
       {
-        icon: 'pi pi-plus-circle'
+        icon: 'pi pi-shopping-cart',
+        command: () => {
+          this.showModalDialog('top')
+        }
       }
     ]
-  }
-
-  toTop() {
-    this.viewportScroller.scrollToPosition([0, 0])
-  }
-  toEnd() {
-    this.viewportScroller.scrollToPosition([0, 2000])
-  }
-  showModalDialog(position: string) {
-    this.position = position
-    this.displayModal = true
   }
 }

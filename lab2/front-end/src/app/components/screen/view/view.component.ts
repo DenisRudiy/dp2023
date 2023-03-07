@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core'
+import { Guitar } from 'src/app/interfaces/guitar'
 
 @Component({
   selector: 'app-view',
@@ -6,13 +7,13 @@ import { Component, EventEmitter, Output } from '@angular/core'
   styleUrls: ['./view.component.scss']
 })
 export class ViewComponent {
-  @Output() newItemEvent = new EventEmitter<string>()
+  @Output() newItemEvent = new EventEmitter<Guitar>()
 
-  addNewItem(item: string) {
-    this.newItemEvent.emit(item)
+  addNewItem(guitar: Guitar) {
+    this.newItemEvent.emit(guitar)
   }
 
-  addItem(newItem: string) {
-    this.addNewItem(newItem)
+  addItem(guitar: Guitar) {
+    this.addNewItem(guitar)
   }
 }

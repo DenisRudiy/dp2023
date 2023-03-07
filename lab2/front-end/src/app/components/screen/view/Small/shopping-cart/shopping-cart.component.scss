@@ -1,10 +1,10 @@
-:host ::ng-deep {
-  .p-orderlist-controls {
-    display: none;
-  }
+.cart {
+  border: 1px solid rgba(78, 77, 77, 0.5);
+  border-radius: 2px;
 }
 
 .product-item {
+  font-family: 'Golos Text', sans-serif;
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -51,4 +51,17 @@
       width: 100px;
     }
   }
+}
+
+.product-badge.status-instock {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #c8e6c9;
+  color: #256029;
+}
+.product-badge.status-lowstock {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #feedaf;
+  color: #8a5340;
 }

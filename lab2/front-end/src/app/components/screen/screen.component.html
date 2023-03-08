@@ -1,8 +1,9 @@
 <app-list
-  [guitar]="item"
+  [guitar]="list"
   [price]="price"
   (delete_guitars)="DeleteGuitars($event)"
   (show)="ShowForm($event)"
+  (del_item)="Del_Item($event)"
 ></app-list>
 <app-view (newItemEvent)="addItem($event)"></app-view>
 <p-sidebar [fullScreen]="true" [baseZIndex]="10000" [(visible)]="Visible">

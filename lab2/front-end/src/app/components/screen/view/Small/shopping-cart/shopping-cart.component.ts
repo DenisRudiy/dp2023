@@ -24,6 +24,11 @@ export class ShoppingCartComponent {
     this.delete_guitars.emit(this.guitar)
   }
 
+  @Output() del_item = new EventEmitter<Guitar>()
+  onDel(item: Guitar) {
+    this.del_item.emit(item)
+  }
+
   showViaService() {
     if (this.guitar.length != 0) {
       this.messageService.add({

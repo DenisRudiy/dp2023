@@ -10,10 +10,15 @@
     </div>
     <div class="product-list-action mr-8">
       <h6 class="mb-2">${{ g.price }}</h6>
-      <span
-        [class]="'product-badge status-' + g.inventoryStatus.toLowerCase()"
-        >{{ g.inventoryStatus }}</span
-      >
+      <button
+        icon="pi pi-trash"
+        pButton
+        pRipple
+        type="button"
+        label="Delete"
+        class="p-button-raised p-button-danger"
+        (click)="onDel(g)"
+      ></button>
     </div>
   </div>
 </div>

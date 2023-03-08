@@ -28,6 +28,15 @@ export class ListComponent implements OnInit {
     this.show.emit(s)
   }
 
+  @Output() del_item = new EventEmitter<Guitar>()
+  Del_Item(item: Guitar) {
+    this.del_item.emit(item)
+  }
+
+  onDel(item: Guitar) {
+    this.Del_Item(item)
+  }
+
   constructor(private viewportScroller: ViewportScroller) {}
 
   items!: MenuItem[]

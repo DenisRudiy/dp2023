@@ -1,0 +1,9 @@
+.form {
+  @apply flex  pt-5;
+  .input {
+    @apply pr-5;
+    input {
+      height: 37px;
+    }
+  }
+}

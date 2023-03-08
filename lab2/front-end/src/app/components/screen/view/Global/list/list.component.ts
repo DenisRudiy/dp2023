@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { MenuItem } from 'primeng/api'
 import { ViewportScroller } from '@angular/common'
 import { Guitar } from 'src/app/interfaces/guitar'
+import { PrimeNGConfig } from 'primeng/api'
 
 @Component({
   selector: 'app-list',
@@ -20,6 +21,11 @@ export class ListComponent implements OnInit {
   // shopping-cart -> list
   OnDel(delete_guitars: Guitar[]) {
     this.DeleteGuitars(delete_guitars)
+  }
+
+  @Output() show = new EventEmitter<boolean>()
+  ShowForm(s: boolean) {
+    this.show.emit(s)
   }
 
   constructor(private viewportScroller: ViewportScroller) {}
@@ -52,7 +58,10 @@ export class ListComponent implements OnInit {
       },
 
       {
-        icon: 'pi pi-plus-circle'
+        icon: 'pi pi-plus-circle',
+        command: () => {
+          this.ShowForm(true)
+        }
       },
       {
         icon: 'pi pi-github',

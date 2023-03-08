@@ -7,6 +7,7 @@ import { Guitar } from 'src/app/interfaces/guitar'
   styleUrls: ['./screen.component.scss']
 })
 export class ScreenComponent {
+  Visible = false
   item: Guitar[] = []
   price = 0
 
@@ -28,5 +29,9 @@ export class ScreenComponent {
       this.item.splice(i)
       this.price = 0
     }
+  }
+
+  ShowForm(s: boolean) {
+    this.Visible = s
   }
 }

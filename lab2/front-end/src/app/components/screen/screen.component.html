@@ -2,5 +2,9 @@
   [guitar]="item"
   [price]="price"
   (delete_guitars)="DeleteGuitars($event)"
+  (show)="ShowForm($event)"
 ></app-list>
 <app-view (newItemEvent)="addItem($event)"></app-view>
+<p-sidebar [fullScreen]="true" [baseZIndex]="10000" [(visible)]="Visible">
+  <app-edit-form></app-edit-form>
+</p-sidebar>

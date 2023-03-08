@@ -32,6 +32,13 @@ import { ScreenComponent } from './components/screen/screen.component'
 import { SliderModule } from 'primeng/slider'
 import { MessagesModule } from 'primeng/messages'
 import { MessageModule } from 'primeng/message'
+import { EditFormComponent } from './components/screen/view/Small/edit-form/edit-form.component'
+import { SidebarModule } from 'primeng/sidebar'
+import { InputTextModule } from 'primeng/inputtext'
+import { CheckboxModule } from 'primeng/checkbox'
+import { RadioButtonModule } from 'primeng/radiobutton'
+import { RippleModule } from 'primeng/ripple'
+import { FileUploadModule } from 'primeng/fileupload'
 
 @NgModule({
   declarations: [
@@ -44,7 +51,8 @@ import { MessageModule } from 'primeng/message'
     GitHubComponent,
     ListComponent,
     ViewComponent,
-    ScreenComponent
+    ScreenComponent,
+    EditFormComponent
   ],
   imports: [
     BrowserModule,
@@ -62,6 +70,12 @@ import { MessageModule } from 'primeng/message'
     SliderModule,
     MessagesModule,
     MessageModule,
+    SidebarModule,
+    InputTextModule,
+    CheckboxModule,
+    RadioButtonModule,
+    RippleModule,
+    FileUploadModule,
     BrowserAnimationsModule,
     FormsModule
   ],

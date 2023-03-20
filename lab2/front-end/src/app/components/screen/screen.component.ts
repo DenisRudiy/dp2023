@@ -10,6 +10,11 @@ export class ScreenComponent {
   Visible = false
   list: Guitar[] = []
   price = 0
+  new: Guitar[] = []
+
+  newList(guitars: Guitar[]) {
+    this.new = guitars
+  }
 
   addItem(guitar: Guitar) {
     let add = true

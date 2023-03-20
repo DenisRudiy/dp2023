@@ -3,6 +3,7 @@ import { MenuItem } from 'primeng/api'
 import { ViewportScroller } from '@angular/common'
 import { Guitar } from 'src/app/interfaces/guitar'
 import { PrimeNGConfig } from 'primeng/api'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-list',
@@ -37,7 +38,10 @@ export class ListComponent implements OnInit {
     this.Del_Item(item)
   }
 
-  constructor(private viewportScroller: ViewportScroller) {}
+  constructor(
+    private viewportScroller: ViewportScroller,
+    private router: Router
+  ) {}
 
   items!: MenuItem[]
   displayModal: any

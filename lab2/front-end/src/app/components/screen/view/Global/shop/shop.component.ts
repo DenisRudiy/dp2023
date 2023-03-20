@@ -9,7 +9,7 @@ import { ShopService } from 'src/app/services/shop.service'
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-  guitars!: Guitar[]
+  @Input() guitars!: Guitar[]
 
   sortOptions!: SelectItem[]
 
@@ -22,8 +22,8 @@ export class ShopComponent implements OnInit {
   constructor(private shopService: ShopService) {}
 
   ngOnInit(): void {
-    this.shopService.getGuitars().subscribe((data) => {
-      this.guitars = data
+    this.shopService.getGuitars().subscribe((guitar) => {
+      this.guitars = guitar
     })
     this.sortOptions = [
       { label: 'High to Low', value: '!price' },

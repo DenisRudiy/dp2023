@@ -1,9 +1,33 @@
 .form {
-  @apply flex  pt-5;
+  @apply flex pt-5;
   .input {
     @apply pr-5;
     input {
       height: 37px;
     }
   }
+}
+.input_img {
+  @apply pr-5 flex justify-center pt-5;
+  width: 550px;
+  input {
+    height: 37px;
+    width: 450px;
+  }
+}
+
+.btn {
+  padding: 5px 15px;
+  background: #81c784;
+  color: black;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.btn:hover {
+  background-color: #5d9260;
 }

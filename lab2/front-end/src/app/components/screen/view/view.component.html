@@ -1,7 +1,7 @@
 <div class="main">
   <app-header></app-header>
   <app-main></app-main>
-  <app-shop (newItemEvent)="addItem($event)"></app-shop>
+  <app-shop (newItemEvent)="addItem($event)" [guitars]="new"></app-shop>
   <app-git-hub></app-git-hub>
   <app-footer></app-footer>
 </div>

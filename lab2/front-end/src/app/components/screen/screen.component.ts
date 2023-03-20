@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core'
+import { Component } from '@angular/core'
+
 import { Guitar } from 'src/app/interfaces/guitar'
 
 @Component({
@@ -10,11 +11,6 @@ export class ScreenComponent {
   Visible = false
   list: Guitar[] = []
   price = 0
-  new: Guitar[] = []
-
-  newList(guitars: Guitar[]) {
-    this.new = guitars
-  }
 
   addItem(guitar: Guitar) {
     let add = true

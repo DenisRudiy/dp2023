@@ -1,7 +1,9 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { SelectItem } from 'primeng/api'
+import { Subscription } from 'rxjs'
 import { Guitar } from 'src/app/interfaces/guitar'
 import { ShopService } from 'src/app/services/shop.service'
+import { EditFormComponent } from '../../Small/edit-form/edit-form.component'
 
 @Component({
   selector: 'app-shop',
@@ -9,7 +11,9 @@ import { ShopService } from 'src/app/services/shop.service'
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-  @Input() guitars!: Guitar[]
+  clickEventSubscription!: Subscription
+
+  guitars!: Guitar[]
 
   sortOptions!: SelectItem[]
 
@@ -19,7 +23,13 @@ export class ShopComponent implements OnInit {
 
   selectedGuitar?: Guitar
 
-  constructor(private shopService: ShopService) {}
+  constructor(private shopService: ShopService) {
+    this.clickEventSubscription = this.shopService
+      .getClickEvent()
+      .subscribe(() => {
+        this.updateGuitars()
+      })
+  }
 
   ngOnInit(): void {
     this.shopService.getGuitars().subscribe((guitar) => {
@@ -29,6 +39,13 @@ export class ShopComponent implements OnInit {
       { label: 'High to Low', value: '!price' },
       { label: 'Low to High', value: 'price' }
     ]
+  }
+
+  updateGuitars() {
+    this.shopService.getGuitars().subscribe((guitar) => {
+      this.shopService.setList(guitar)
+      this.guitars = guitar
+    })
   }
 
   onSortChange(event: any) {

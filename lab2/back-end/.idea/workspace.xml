@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a265f5f0-2abd-465a-b530-a0a4f61cdbdc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/backend/BackEndApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/backend/BackEndApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/backend/controller/AddGuitarController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/backend/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/backend/entity/GuitarEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/backend/repositroy/GuitarRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add-guitar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/backend/controller/GuitarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/backend/controller/GuitarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/screen/view/Global/shop/shop.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/screen/view/Global/shop/shop.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/components/screen/view/Small/edit-form/edit-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/components/screen/view/Small/edit-form/edit-form.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/app/services/shop.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/app/services/shop.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/favicon.ico" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

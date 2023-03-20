@@ -7,7 +7,6 @@ import { Guitar } from 'src/app/interfaces/guitar'
   styleUrls: ['./view.component.scss']
 })
 export class ViewComponent {
-  @Input() new!: Guitar[]
   @Output() newItemEvent = new EventEmitter<Guitar>()
 
   addNewItem(guitar: Guitar) {

@@ -5,7 +5,7 @@
   (show)="ShowForm($event)"
   (del_item)="Del_Item($event)"
 ></app-list>
-<app-view (newItemEvent)="addItem($event)" [new]="new"></app-view>
+<app-view (newItemEvent)="addItem($event)"></app-view>
 <p-sidebar [fullScreen]="true" [baseZIndex]="10000" [(visible)]="Visible">
-  <app-edit-form (new)="newList($event)"></app-edit-form>
+  <app-edit-form></app-edit-form>
 </p-sidebar>

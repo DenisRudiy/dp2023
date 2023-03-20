@@ -10,4 +10,10 @@ html {
 }
 body {
   font-family: 'Golos Text', sans-serif;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
 }

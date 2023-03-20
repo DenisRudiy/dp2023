@@ -1,119 +1,283 @@
+<p-messages></p-messages>
+
 <div class="flex justify-center">
-  <h2 class="font-bold">Add New Guitar</h2>
+  <div class="flex flex-wrap justify-center">
+    <form #guitarForm="ngForm" class="pt-10">
+      <div class="flex">
+        <div class="w-8"></div>
+        <h2>Add Guitar</h2>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div>
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"
+                ><i class="pi pi-prime"></i
+              ></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="Name"
+                [(ngModel)]="new_guitar.name"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+
+            <div class="input">
+              <span class="p-inputgroup-addon">$</span>
+              <input
+                type="text"
+                pInputText
+                placeholder="Price"
+                [(ngModel)]="new_guitar.price"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+          </div>
+
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"><i class="pi pi-tag"></i></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="Category"
+                [(ngModel)]="new_guitar.category"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-align-left"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="Description"
+                  [(ngModel)]="new_guitar.description"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-star-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="Rate"
+                  [(ngModel)]="new_guitar.rate"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-chart-bar"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="Status"
+                  [(ngModel)]="new_guitar.inventoryStatus"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="input_img">
+          <div>
+            <span class="p-inputgroup-addon"><i class="pi pi-image"></i></span>
+            <input
+              type="text"
+              pInputText
+              placeholder="Photo"
+              [(ngModel)]="new_guitar.photo"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-center pt-5">
+          <p-button
+            icon="pi pi-plus-circle"
+            type=""
+            label="Add item"
+            styleClass="p-button-sm"
+            class="text-zinc-50"
+            (onClick)="showViaServiceAdd()"
+          ></p-button>
+        </div>
+      </div>
+    </form>
+    <form #guitarForm="ngForm" class="pt-10" *ngIf="selectedGuitar">
+      <div class="flex">
+        <div class="w-8"></div>
+        <h2>Update Guitar</h2>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div>
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"
+                ><i class="pi pi-prime"></i
+              ></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="Name"
+                [(ngModel)]="selectedGuitar.name"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+
+            <div class="input">
+              <span class="p-inputgroup-addon">$</span>
+              <input
+                type="text"
+                pInputText
+                placeholder="Price"
+                [(ngModel)]="selectedGuitar.price"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+          </div>
+
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"><i class="pi pi-tag"></i></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="Category"
+                [(ngModel)]="selectedGuitar.category"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-align-left"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="Description"
+                  [(ngModel)]="selectedGuitar.description"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-star-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="Rate"
+                  [(ngModel)]="selectedGuitar.rate"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-chart-bar"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="Status"
+                  [(ngModel)]="selectedGuitar.inventoryStatus"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="input_img">
+          <div>
+            <span class="p-inputgroup-addon"><i class="pi pi-image"></i></span>
+            <input
+              type="text"
+              pInputText
+              placeholder="Photo"
+              [(ngModel)]="selectedGuitar.photo"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-center pt-5">
+          <p-button
+            icon="pi pi-arrow-circle-up
+            "
+            type=""
+            label="Update guitar"
+            styleClass="p-button-sm"
+            class="text-zinc-50"
+            (onClick)="showViaServiceUpdate()"
+          ></p-button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
-<form #guitarForm="ngForm">
-  <div class="flex flex-wrap justify-center">
-    <div>
-      <div class="form">
-        <div class="input">
-          <span class="p-inputgroup-addon"><i class="pi pi-prime"></i></span>
-          <input
-            type="text"
-            pInputText
-            placeholder="Name"
-            [(ngModel)]="new_guitar.name"
-            [ngModelOptions]="{ standalone: true }"
-          />
+<div class="pt-10">
+  <p-orderList
+    [value]="guitars"
+    [listStyle]="{ 'max-height': '38rem' }"
+    header="List of Guitars"
+    filterBy="name"
+    filterPlaceholder="Filter by name"
+    [dragdrop]="false"
+  >
+    <ng-template let-guitar pTemplate="item">
+      <div class="product-item" (click)="onSelect(guitar)">
+        <div class="image-container">
+          <img src="{{ guitar.photo }}" [alt]="guitar.name" class="w-36" />
         </div>
-
-        <div class="input">
-          <span class="p-inputgroup-addon">$</span>
-          <input
-            type="text"
-            pInputText
-            placeholder="Price"
-            [(ngModel)]="new_guitar.price"
-            [ngModelOptions]="{ standalone: true }"
-          />
+        <div class="product-list-detail">
+          <h5 class="mb-2">{{ guitar.name }}</h5>
+          <i class="pi pi-tag product-category-icon"></i>
+          <span class="product-category">{{ guitar.category }}</span>
         </div>
-      </div>
-
-      <div class="form">
-        <div class="input">
-          <span class="p-inputgroup-addon"><i class="pi pi-tag"></i></span>
-          <input
-            type="text"
-            pInputText
-            placeholder="Category"
-            [(ngModel)]="new_guitar.category"
-            [ngModelOptions]="{ standalone: true }"
-          />
-        </div>
-        <div class="input">
-          <div>
-            <span class="p-inputgroup-addon"
-              ><i class="pi pi-align-left"></i
-            ></span>
-            <input
-              type="text"
-              pInputText
-              placeholder="Description"
-              [(ngModel)]="new_guitar.description"
-              [ngModelOptions]="{ standalone: true }"
-            />
-          </div>
+        <div class="product-list-action">
+          <h6 class="mb-2">${{ guitar.price }}</h6>
+          <button
+            icon="pi pi-trash"
+            pButton
+            pRipple
+            type="button"
+            label="Delete"
+            class="p-button-raised p-button-danger"
+            (click)="onDelete(guitar)"
+          ></button>
         </div>
       </div>
-      <div class="form">
-        <div class="input">
-          <div>
-            <span class="p-inputgroup-addon"
-              ><i class="pi pi-star-fill"></i
-            ></span>
-            <input
-              type="text"
-              pInputText
-              placeholder="Rate"
-              [(ngModel)]="new_guitar.rate"
-              [ngModelOptions]="{ standalone: true }"
-            />
-          </div>
-        </div>
-
-        <div class="input">
-          <div>
-            <span class="p-inputgroup-addon"
-              ><i class="pi pi-chart-bar"></i
-            ></span>
-            <input
-              type="text"
-              pInputText
-              placeholder="Status"
-              [(ngModel)]="new_guitar.inventoryStatus"
-              [ngModelOptions]="{ standalone: true }"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="flex justify-center">
-    <div class="input_img">
-      <div>
-        <span class="p-inputgroup-addon"><i class="pi pi-image"></i></span>
-        <input
-          type="text"
-          pInputText
-          placeholder="Photo"
-          [(ngModel)]="new_guitar.photo"
-          [ngModelOptions]="{ standalone: true }"
-        />
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <div class="flex justify-center pt-5">
-      <p-button
-        icon="pi pi-plus-circle"
-        type=""
-        label="Add item"
-        styleClass="p-button-sm"
-        class="text-zinc-50"
-        (onClick)="onAdd()"
-      ></p-button>
-    </div>
-  </div>
-</form>
-<p-messages></p-messages>
+    </ng-template>
+  </p-orderList>
+</div>

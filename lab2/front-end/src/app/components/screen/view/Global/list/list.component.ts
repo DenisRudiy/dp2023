@@ -66,9 +66,10 @@ export class ListComponent implements OnInit {
           this.toTop()
         }
       },
-      {
-        icon: 'pi pi-list'
-      },
+      // {
+      //   icon: 'pi pi-list',
+      //   command: () => {}
+      // },
 
       {
         icon: 'pi pi-plus-circle',

@@ -1,5 +1,5 @@
 .nav {
-  @apply h-20 bg-sky-900 fixed px-10 z-10 flex;
+  @apply h-20 bg-stone-800 fixed px-10 z-10 flex;
   width: 75%;
 
   img {
@@ -10,7 +10,8 @@
     li {
       @apply px-5 py-2;
       h2 {
-        @apply text-2xl text-green-400 font-bold;
+        @apply text-2xl  font-bold;
+        color: #ffd54f;
       }
     }
   }

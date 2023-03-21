@@ -65,3 +65,8 @@
   background: #feedaf;
   color: #8a5340;
 }
+
+.total_price {
+  @apply mt-5 font-bold flex justify-center;
+  color: #c9a83b;
+}

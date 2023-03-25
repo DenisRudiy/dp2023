@@ -2,8 +2,8 @@ div {
   @apply absolute;
   width: 100%;
   .circle {
+    margin-top: 10px;
     position: fixed;
-    margin-top: 980px;
     padding-left: 92vw;
     z-index: 1500;
   }

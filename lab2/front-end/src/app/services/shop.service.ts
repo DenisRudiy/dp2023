@@ -10,27 +10,24 @@ export class ShopService {
   list = new BehaviorSubject<Guitar[]>([])
   private subject = new Subject<any>()
 
-  get_url: string = 'http://localhost:2828/back-end/api/guitar_entity/retrieve'
-  post_url: string = 'http://localhost:2828/back-end/api/guitar_entity/create'
-  put_url: string = 'http://localhost:2828/back-end/api/guitar_entity/update'
-  del_url: string = 'http://localhost:2828/back-end/api/guitar_entity/delete'
+  url: string = 'http://localhost:2828/api/guitars'
 
   constructor(private http: HttpClient) {}
 
   getGuitars(): Observable<Guitar[]> {
-    return this.http.get<Guitar[]>(this.get_url)
+    return this.http.get<Guitar[]>(this.url + '/retrieve')
   }
 
   createGuitar(guitar: Guitar): Observable<any> {
-    return this.http.post(this.post_url, guitar)
+    return this.http.post(this.url + '/create', guitar)
   }
 
   updateGuitar(guitar: Guitar): Observable<Object> {
-    return this.http.put(`${this.put_url}/${guitar.id}`, guitar)
+    return this.http.put(`${this.url + '/update'}/${guitar.id}`, guitar)
   }
 
   deleteGuitar(guitar: Guitar): Observable<Guitar[]> {
-    return this.http.delete<Guitar[]>(this.del_url + '/' + guitar.id)
+    return this.http.delete<Guitar[]>(this.url + '/delete/' + guitar.id)
   }
 
   setList(guitar: Guitar[]) {

@@ -38,8 +38,7 @@ import { InputTextModule } from 'primeng/inputtext'
 import { CheckboxModule } from 'primeng/checkbox'
 import { RadioButtonModule } from 'primeng/radiobutton'
 import { RippleModule } from 'primeng/ripple'
-import { FileUploadModule } from 'primeng/fileupload';
-import { SwaggerComponent } from './components/help/swagger/swagger.component'
+import { FileUploadModule } from 'primeng/fileupload'
 
 @NgModule({
   declarations: [
@@ -53,8 +52,7 @@ import { SwaggerComponent } from './components/help/swagger/swagger.component'
     ListComponent,
     ViewComponent,
     ScreenComponent,
-    EditFormComponent,
-    SwaggerComponent
+    EditFormComponent
   ],
   imports: [
     BrowserModule,

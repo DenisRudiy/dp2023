@@ -66,10 +66,11 @@ export class ListComponent implements OnInit {
           this.toTop()
         }
       },
-      // {
-      //   icon: 'pi pi-list',
-      //   command: () => {}
-      // },
+      {
+        icon: 'pi pi-list',
+        target: '_blank',
+        url: 'http://localhost:2828/swagger-ui/index.html'
+      },
 
       {
         icon: 'pi pi-plus-circle',

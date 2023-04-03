@@ -1,6 +1,5 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "esModuleInterop": true,
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
@@ -20,10 +19,14 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "noImplicitAny": false,
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "typeRoots": [
+      "./node_modules/@types/"
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
